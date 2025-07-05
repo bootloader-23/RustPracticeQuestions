@@ -3,7 +3,7 @@
 use text_io::read;
 fn main() {
     
-    let  tup:(String, i32, u64) = ("Atharva".to_string(), 18, 6202147475);
+    let  tup:(String, i32, u64) = ("Bulla".to_string(), 69, 1714212714);
     println!("Name: {}\nAge: {}\nNumber: {}", tup.0, tup.1, tup.2);
     
     let tuple:(String, i32, u64) = (read!(), read!(), read!()); //reading user input in tuple
