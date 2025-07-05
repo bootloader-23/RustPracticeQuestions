@@ -1,0 +1,247 @@
+# 200 Basic Rust Questions for Beginners
+
+## Variables & Data Types (1-25)
+
+1. Create a variable that stores your age and print it - DONE
+2. Create an immutable variable and try to change it (observe the error)
+3. Create a mutable variable and change its value - DONE
+4. Declare variables of different integer types (i8, i16, i32, i64, u8, u16, u32, u64) --DONE
+5. Create floating point variables (f32, f64) and perform basic arithmetic - DONE
+6. Create a boolean variable and print its value - DONE
+7. Create a character variable and print it
+8. Use type annotation to explicitly declare variable types
+9. Create a tuple with different data types and access its elements
+10. Create an array of 5 integers and print each element
+11. Create a slice from an array and print it
+12. Use the `let` keyword to shadow a variable
+13. Create a constant using `const` keyword
+14. Use `std::mem::size_of` to find the size of different data types
+15. Create a variable without initializing it, then assign a value later
+16. Use `_` to ignore unused variables
+17. Create a reference to a variable using `&`
+18. Create a mutable reference using `&mut`
+19. Use `println!` with different format specifiers (`{}`, `{:?}`, `{:#?}`)
+20. Create a string literal and a String object
+21. Convert between string types using `to_string()` and `String::from()`
+22. Create a vector and add elements to it
+23. Use `Vec::with_capacity()` to create a vector with initial capacity
+24. Create a HashMap and insert key-value pairs
+25. Use `Option<T>` to represent nullable values
+
+## Control Flow (26-50)
+
+26. Write an if-else statement to check if a number is positive, negative, or zero
+27. Use `else if` to check multiple conditions
+28. Write a `match` statement for a simple enum
+29. Use `match` with integer values and ranges
+30. Write a `for` loop to iterate over an array
+31. Use `for` loop with ranges (`1..10`, `1..=10`)
+32. Write a `while` loop to count from 1 to 10
+33. Use `loop` with `break` to create an infinite loop that exits
+34. Use `continue` to skip iterations in a loop
+35. Write nested loops and use labeled breaks
+36. Use `if let` to handle Option values
+37. Use `while let` in a loop
+38. Write a match statement with guards
+39. Use `match` with tuples
+40. Write a function that returns early using `return`
+41. Use `break` with a value in a loop
+42. Write a match statement that handles all possible cases
+43. Use `_` as a catch-all pattern in match
+44. Write conditional assignment using `if` expressions
+45. Use `match` to destructure a struct
+46. Write a loop that modifies a mutable variable
+47. Use `enumerate()` to get index and value in a for loop
+48. Write a match statement for Result<T, E>
+49. Use `if let` with Result
+50. Write a function that uses early returns for error handling
+
+## Functions (51-75)
+
+51. Write a function that takes no parameters and returns nothing
+52. Write a function that takes one parameter and returns a value
+53. Write a function that takes multiple parameters
+54. Write a function that returns a tuple
+55. Write a function with explicit return type annotation
+56. Write a function that borrows a parameter
+57. Write a function that takes a mutable reference
+58. Write a function that takes ownership of a parameter
+59. Write a function that returns a reference (with lifetime)
+60. Write a function with default parameter values using Option
+61. Write a function that returns `Result<T, E>`
+62. Write a function that returns `Option<T>`
+63. Write a recursive function (factorial or fibonacci)
+64. Write a function that takes a closure as parameter
+65. Write a function that returns a closure
+66. Use `impl Trait` in function parameters
+67. Use `impl Trait` in return types
+68. Write a function with generic parameters
+69. Write a function with multiple generic parameters
+70. Write a function with generic constraints
+71. Write a function that uses `where` clause
+72. Write a higher-order function that takes a function pointer
+73. Write a function that uses pattern matching in parameters
+74. Write a function with lifetime parameters
+75. Write a function that handles multiple error types
+
+## Ownership & Borrowing (76-100)
+
+76. Create a function that takes ownership of a String
+77. Create a function that borrows a String
+78. Move a value and try to use it again (observe the error)
+79. Clone a value to avoid move semantics
+80. Create multiple immutable references to the same data
+81. Try to create mutable and immutable references simultaneously (observe error)
+82. Use `&mut` to modify data through a reference
+83. Write a function that returns a reference to local data (observe error)
+84. Use lifetime annotations in function signatures
+85. Create a struct with lifetime parameters
+86. Use `'static` lifetime
+87. Write a function that takes slices instead of owned data
+88. Use `Cow<T>` to handle borrowed or owned data
+89. Implement `Copy` trait for a simple struct
+90. Implement `Clone` trait for a struct with heap data
+91. Use `Rc<T>` for shared ownership
+92. Use `Arc<T>` for thread-safe shared ownership
+93. Use `RefCell<T>` for interior mutability
+94. Understand when to use `Box<T>` for heap allocation
+95. Use `std::mem::replace` to take ownership of data
+96. Use `std::mem::take` to take ownership with default
+97. Write a function that accepts both String and &str
+98. Use pattern matching to destructure and take ownership
+99. Create a cyclic reference and understand the problem
+100. Use `Weak<T>` to break reference cycles
+
+## Structs & Enums (101-125)
+
+101. Define a simple struct with named fields
+102. Create instances of a struct
+103. Use tuple structs
+104. Create a unit struct
+105. Implement methods for a struct using `impl`
+106. Create associated functions (static methods)
+107. Use `Self` keyword in implementations
+108. Create a struct with generic parameters
+109. Implement `Debug` trait for a struct
+110. Use `#[derive(Debug)]` to auto-implement Debug
+111. Create a struct with private fields
+112. Use `pub` keyword to make fields public
+113. Create a constructor function for a struct
+114. Use struct update syntax (`..other_struct`)
+115. Define an enum with different variants
+116. Create an enum with data in variants
+117. Use `match` to handle all enum variants
+118. Implement methods for enums
+119. Use `Option<T>` enum effectively
+120. Use `Result<T, E>` enum for error handling
+121. Create a recursive enum (like a linked list)
+122. Use `Box<T>` with recursive enums
+123. Implement `Display` trait for an enum
+124. Use `#[derive(Clone, Copy)]` for simple enums
+125. Create an enum that represents state transitions
+
+## Collections (126-150)
+
+126. Create a vector and push elements to it
+127. Pop elements from a vector
+128. Use `Vec::with_capacity()` for performance
+129. Iterate over a vector with `for` loop
+130. Use `iter()`, `into_iter()`, and `iter_mut()`
+131. Use `collect()` to create a collection from an iterator
+132. Filter a vector using `filter()`
+133. Transform a vector using `map()`
+134. Use `fold()` or `reduce()` to aggregate values
+135. Find elements using `find()` and `find_map()`
+136. Check if any/all elements match a condition
+137. Sort a vector using `sort()` and `sort_by()`
+138. Remove duplicates from a vector
+139. Create a HashMap and insert key-value pairs
+140. Check if a key exists in HashMap
+141. Use `entry()` API for HashMap
+142. Iterate over HashMap keys, values, and entries
+143. Use `HashMap::with_capacity()` for performance
+144. Create a HashSet and perform set operations
+145. Use `BTreeMap` for ordered key-value pairs
+146. Use `BTreeSet` for ordered unique values
+147. Create a `VecDeque` and use it as a queue
+148. Use `LinkedList` for specific use cases
+149. Convert between different collection types
+150. Use `drain()` to move elements out of collections
+
+## Error Handling (151-175)
+
+151. Use `unwrap()` to extract values from Option
+152. Use `expect()` with custom error messages
+153. Use `match` to handle Option values
+154. Use `if let` with Option
+155. Use `?` operator with Option
+156. Create a function that returns Result<T, E>
+157. Use `match` to handle Result values
+158. Use `?` operator for error propagation
+159. Create custom error types
+160. Implement `std::error::Error` trait
+161. Use `Box<dyn Error>` for dynamic error types
+162. Use `anyhow` crate for error handling (mention it exists)
+163. Convert between different error types
+164. Use `map_err()` to transform errors
+165. Use `and_then()` for chaining operations
+166. Use `or_else()` for fallback operations
+167. Create a Result that contains multiple errors
+168. Use `collect()` with Result to fail fast
+169. Use `partition()` to separate Ok and Err values
+170. Implement `From` trait for error conversion
+171. Use `panic!` macro and understand when to use it
+172. Use `assert!` and `assert_eq!` macros
+173. Handle panics using `catch_unwind`
+174. Use `Option::ok_or()` to convert to Result
+175. Use `Result::ok()` to convert to Option
+
+## Traits & Generics (176-200)
+
+176. Define a simple trait with one method
+177. Implement a trait for a struct
+178. Use trait bounds in function parameters
+179. Use trait bounds in generic structs
+180. Implement multiple traits for the same type
+181. Use `where` clause for complex trait bounds
+182. Create a trait with default implementations
+183. Use associated types in traits
+184. Implement `Iterator` trait for a custom type
+185. Use `IntoIterator` trait
+186. Implement `Display` trait for custom formatting
+187. Implement `From` and `Into` traits for conversions
+188. Use `AsRef` and `AsMut` traits
+189. Create a trait object using `dyn`
+190. Use `Box<dyn Trait>` for dynamic dispatch
+191. Understand the difference between static and dynamic dispatch
+192. Use `impl Trait` in return types
+193. Create a generic function with multiple type parameters
+194. Use lifetime parameters with generics
+195. Create a generic struct with trait bounds
+196. Use `PhantomData` for zero-sized type parameters
+197. Implement `Drop` trait for cleanup
+198. Use `Deref` and `DerefMut` traits
+199. Create a builder pattern using traits
+200. Implement `PartialEq` and `Eq` traits for comparisons
+
+---
+
+## Practice Tips:
+
+1. **Start Simple**: Begin with variables and basic syntax
+2. **Use the Compiler**: Let Rust's compiler teach you - read error messages carefully
+3. **Practice Daily**: Try to solve 5-10 questions daily
+4. **Write Tests**: Practice writing unit tests for your solutions
+5. **Read Documentation**: Use `cargo doc --open` to explore standard library
+6. **Join Community**: Participate in Rust forums and Discord channels
+7. **Build Projects**: Apply these concepts in small projects as you learn
+
+## Recommended Order:
+- Questions 1-50: Core syntax and control flow
+- Questions 51-100: Functions and ownership (most important!)
+- Questions 101-150: Data structures and collections
+- Questions 151-175: Error handling patterns
+- Questions 176-200: Advanced traits and generics
+
+Remember: The goal isn't to rush through all questions, but to understand
+each concept deeply before moving on!
