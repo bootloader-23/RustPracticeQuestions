@@ -1,3 +1,4 @@
+//Create a slice from an array and print it
 fn main() {
     let arr:[i32;5] = [1, 2, 3, 4, 5];
     println!("arr = {:?}", arr);
@@ -29,6 +30,8 @@ fn main() {
     println!("x = {:?}", x);
     // array_name[index] can be uses simply like any other variable in RUST
     // and most other languages.
+    
+    
         
     
    

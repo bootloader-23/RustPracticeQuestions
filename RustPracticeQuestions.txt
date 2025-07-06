@@ -2,19 +2,19 @@
 
 ## Variables & Data Types (1-25)
 
-1. Create a variable that stores your age and print it - DONE
-2. Create an immutable variable and try to change it (observe the error)
-3. Create a mutable variable and change its value - DONE
-4. Declare variables of different integer types (i8, i16, i32, i64, u8, u16, u32, u64) --DONE
-5. Create floating point variables (f32, f64) and perform basic arithmetic - DONE
-6. Create a boolean variable and print its value - DONE
+1. Create a variable that stores your age and print it - ✅
+2. Create an immutable variable and try to change it (observe the error) - ✅
+3. Create a mutable variable and change its value - ✅
+4. Declare variables of different integer types (i8, i16, i32, i64, u8, u16, u32, u64) --✅
+5. Create floating point variables (f32, f64) and perform basic arithmetic - ✅
+6. Create a boolean variable and print its value - ✅
 7. Create a character variable and print it
 8. Use type annotation to explicitly declare variable types
-9. Create a tuple with different data types and access its elements - DONE
-10. Create an array of 5 integers and print each element - DONE
-11. Create a slice from an array and print it
-12. Use the `let` keyword to shadow a variable
-13. Create a constant using `const` keyword
+9. Create a tuple with different data types and access its elements - ✅
+10. Create an array of 5 integers and print each element - ✅
+11. Create a slice from an array and print it - ✅
+12. Use the `let` keyword to shadow a variable - ✅
+13. Create a constant using `const` keyword - ✅
 14. Use `std::mem::size_of` to find the size of different data types
 15. Create a variable without initializing it, then assign a value later
 16. Use `_` to ignore unused variables
