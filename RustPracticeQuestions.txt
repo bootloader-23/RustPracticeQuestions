@@ -21,8 +21,8 @@
 17. Create a reference to a variable using `&`✅
 18. Create a mutable reference using `&mut` ✅
 19. Use `println!` with different format specifiers (`{}`, `{:?}`, `{:#?}`) ✅
-20. Create a string literal and a String object
-21. Convert between string types using `to_string()` and `String::from()`
+20. Create a string literal and a String object ✅
+21. Convert between string types using `to_string()` and `String::from()`✅
 22. Create a vector and add elements to it
 23. Use `Vec::with_capacity()` to create a vector with initial capacity
 24. Create a HashMap and insert key-value pairs
