@@ -15,12 +15,12 @@
 11. Create a slice from an array and print it - ✅
 12. Use the `let` keyword to shadow a variable - ✅
 13. Create a constant using `const` keyword - ✅
-14. Use `std::mem::size_of` to find the size of different data types
-15. Create a variable without initializing it, then assign a value later
+14. Use `std::mem::size_of` to find the size of different data types ✅
+15. Create a variable without initializing it, then assign a value later ✅
 16. Use `_` to ignore unused variables
-17. Create a reference to a variable using `&`
-18. Create a mutable reference using `&mut`
-19. Use `println!` with different format specifiers (`{}`, `{:?}`, `{:#?}`)
+17. Create a reference to a variable using `&`✅
+18. Create a mutable reference using `&mut` ✅
+19. Use `println!` with different format specifiers (`{}`, `{:?}`, `{:#?}`) ✅
 20. Create a string literal and a String object
 21. Convert between string types using `to_string()` and `String::from()`
 22. Create a vector and add elements to it
